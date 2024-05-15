@@ -5,29 +5,152 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>On Chain Page | Necro Wallet</title>
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a; /* Black */
-    color: #ffffff; /* White */
-    margin: 0;
-    padding: 20px;
-}
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-h1 {
-    color: #ff4d4d; /* Red */
-    text-align: center;
-}
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a1a1a; /* Black */
+            color: #ffffff; /* White */
+        }
 
-p {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
-}
-</style>
+        /* Container Styles */
+      .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2b2b2b; /* Dark Grey */
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styles */
+        h1 {
+            color: #ff4d4d; /* Red */
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        /* Wallet Styles */
+      .wallet {
+            background-color: #333333; /* Darker Grey */
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+      .balance {
+            font-size: 24px;
+        }
+
+        /* Button Styles */
+      .button {
+            background-color: #666666; /* Grey */
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 5px;
+        }
+
+      .button:hover {
+            background-color: #4d4d4d; /* Dark Grey */
+        }
+
+        /* Sidebar Styles */
+      .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 100vh;
+            background-color: #1a1a1a; /* Black */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+      .avatar {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            background-color: #ff4d4d; /* Red */
+            margin: 20px auto;
+        }
+
+      .menu-item {
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #333333; /* Darker Grey */
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+      .menu-item:hover {
+            background-color: #4d4d4d; /* Dark Grey */
+        }
+
+        /* Notification Bell Styles */
+      .notification-bell {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: #ffffff;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+      .notification-bell:hover {
+            color: #ff4d4d; /* Red */
+        }
+
+        /* Button Container Styles */
+      .button-container {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome to the On Chain Page</h1>
-<p>This is the content related to the On Chain feature of the Necro Wallet.</p>
-<p>Feel free to explore and manage your on-chain transactions here.</p>
+<h1> Necro Wallet </h1>
+    </div>
+    <div class="sidebar">
+        <div class="avatar"></div>
+        <a href="#" class="menu-item">Dashboard</a>
+        <a href="#" class="menu-item">Lightning</a>
+        <a href="#" class="menu-item">E-Cash</a>
+        <a href="#" class="menu-item">Mining</a>
+        <a href="#" class="menu-item">Nostr</a>
+        <a href="#" class="menu-item">Settings</a>
+        </div>
+       <div class="container">
+        <h1>On Chain</h1>
+        <div class="wallet">
+            <p>Balance: <span class="balance">0.0000000 BTC</span></p>
+        </div>
+        <div class="button-container">
+            <button class="button">Send</button>
+            <button class="button">Receive</button>
+            <button class="button">Lock</button>
+            <br>
+            <br>
+            <button class="button">Backup</button>
+            <button class="button">Hard Wallet</button>
+            <button class="button">Fee Breakdown</button>
+                
+    </div>
+    </div>
 </body>
 </html>
