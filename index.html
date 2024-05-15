@@ -1,153 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Necro Wallet</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a; /* Black */
-    color: #ffffff; /* White */
-    margin: 0;
-    padding: 0;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Necro Wallet</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #2b2b2b; /* Dark Grey */
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Black */
+            color: #ffffff; /* White */
+        }
 
-h1 {
-    color: #ff4d4d; /* Red */
-    text-align: center;
-}
+        /* Container Styles */
+       .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2b2b2b; /* Dark Grey */
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.wallet {
-    background-color: #333333; /* Darker Grey */
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
+        /* Header Styles */
+        h1 {
+            color: #ff4d4d; /* Red */
+            text-align: center;
+        }
 
-.balance {
-    font-size: 24px;
-}
+        /* Wallet Styles */
+       .wallet {
+            background-color: #333333; /* Darker Grey */
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
 
-.button {
-    background-color: #666666; /* Grey */
-    color: #ffffff;
-    padding: 10px 20px;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
-    margin: 5px;
-}
+       .balance {
+            font-size: 24px;
+        }
 
-.button:hover {
-    background-color: #4d4d4d; /* Dark Grey */
-}
+        /* Button Styles */
+       .button {
+            background-color: #666666; /* Grey */
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 5px;
+        }
 
-.sidebar {
-    float: left;
-    width: 20%;
-    height: 100vh;
-    background-color: #1a1a1a; /* Black */
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-}
+       .button:hover {
+            background-color: #4d4d4d; /* Dark Grey */
+        }
 
-.avatar {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    background-color: #ff4d4d; /* Red */
-    margin: 20px auto;
-}
+        /* Sidebar Styles */
+       .sidebar {
+            float: left;
+            width: 20%;
+            height: 100vh;
+            background-color: #1a1a1a; /* Black */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
 
-.menu-item {
-    display: block;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: #333333; /* Darker Grey */
-    color: #ffffff;
-    text-align: center;
-    border-radius: 5px;
-}
+       .avatar {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            background-color: #ff4d4d; /* Red */
+            margin: 20px auto;
+        }
 
-.menu-item:hover {
-    background-color: #4d4d4d; /* Dark Grey */
-}
+       .menu-item {
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #333333; /* Darker Grey */
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+        }
 
-.button-container {
-    text-align: center;
-}
+       .menu-item:hover {
+            background-color: #4d4d4d; /* Dark Grey */
+        }
 
-</style>
+        /* Button Container Styles */
+       .button-container {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<div class="sidebar">
-    <div class="avatar"></div>
-    <a href="#" class="menu-item">On Chain</a>
-    <a href="#" class="menu-item">Lightning</a>
-    <a href="#" class="menu-item">Fedimint</a>
-    <a href="#" class="menu-item">Cashu</a>
-    <a href="#" class="menu-item">Liquid</a>
-    <a href="#" class="menu-item">Ark</a>
-    <a href="#" class="menu-item">Mining</a>
-    <a href="#" class="menu-item">Nostr</a>
-    <a href="#" class="menu-item">Statistics</a>
-    <a href="#" class="menu-item">Settings</a>
-    <a href="#" class="menu-item">Support</a>
- 
-</div>
-<div class="container">
-    <h1>Necro Wallet</h1>
-    <div class="wallet">
-        <p>Balance: <span class="balance">0.0000000 BTC</span></p>
+    <div class="sidebar">
+        <div class="avatar"></div>
+        <a href="#" class="menu-item">On Chain</a>
+        <a href="#" class="menu-item">Lightning</a>
+        <a href="#" class="menu-item">Fedimint</a>
+        <a href="#" class="menu-item">Cashu</a>
+        <a href="#" class="menu-item">Liquid</a>
+        <a href="#" class="menu-item">Ark</a>
+        <a href="#" class="menu-item">Mining</a>
+        <a href="#" class="menu-item">Nostr</a>
+        <a href="#" class="menu-item">Statistics</a>
+        <a href="#" class="menu-item">Settings</a>
+        <a href="#" class="menu-item">Support</a>
     </div>
-    <div class="button-container">
-        <button class="button">Payjoin</button>
-        <button class="button">Coinjoin</button>
-        <button class="button">Jam Yield</button>
-        <br>
-        <br>
-        <button class="button">Zap Stream</button>
-        <button class="button">Zap Split</button>
-        <button class="button">Zap Prism</button>
-        <br>
-        <br>
-        <button class="button">Robo Buy</button>
-        <button class="button">Robo Sell</button>
-        <button class="button">Robo Stats</button>
-        <br>
-        <br>
-        <button class="button">Nostr Login</button>
-        <button class="button">NWC</button>
-        <button class="button">Nostr Contacts</button>
-        <br>
-        <br>
-        <button class="button">Ocean</button>
-        <button class="button">Demand</button>
-        <button class="button">Purchase Hash</button>
-        <br>
-        <br>
-        <button class="button">Multisig</button>
-        <button class="button">Time Lock</button>
-        <button class="button">Cold Card</button>
-        <br>
-        <br>
-        <button class="button">Open Sats</button>
-        <button class="button">Satoshi Legal</button>
-        <button class="button">Geyser</button>
-      
-        
-      
+    <div class="container">
+        <h1>Necro Wallet</h1>
+        <div class="wallet">
+            <p>Balance: <span class="balance">0.0000000 BTC</span></p>
+        </div>
+        <div class="button-container">
+            <button class="button">Payjoin</button>
+            <button class="button">Coinjoin</button>
+            <button class="button">Jam Yield</button>
+            <br>
+            <br>
+            <button class="button">Zap Stream</button>
+            <button class="button">Zap Split</button>
+            <button class="button">Zap Prism</button>
+            <br>
+            <br>
+            <button class="button">Robo Buy</button>
+            <button class="button">Robo Sell</button>
+            <button class="button">Robo Stats</button>
+            <br>
+            <br>
+            <button class="button">Nostr Login</button>
+            <button class="button">NWC</button>
+            <button class="button">Nostr Contacts</button>
+            <br>
+            <br>
+            <button class="button">Ocean</button>
+            <button class="button">Demand</button>
+            <button class="button">Purchase Hash</button>
+            <br>
+            <br>
+            <button class="button">Multisig</button>
+            <button class="button">Time Lock</button>
+            <button class="button">Cold Card</button>
+            <br>
+            <br>
+            <button class="button">Open Sats</button>
+            <button class="button">Satoshi Legal</button>
+            <button class="button">Geyser</button>
+        </div>
+    </div>
+</body>
+</html>
